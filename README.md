@@ -31,7 +31,7 @@ Le projet suit une architecture MVC Laravel classique avec les modules suivants 
 | Backend          | PHP (Laravel 11.x)                    |
 | Base de données  | MySQL                                 |
 | Authentification | Laravel Auth / Middleware             |
-| Frontend         | Blade + Bootstrap / Tailwind CSS      |
+| Frontend         | Blade + W3 CSS      |
 | Hébergement      | Render / Railway                      |
 
 ## ⚙️ Installation locale
