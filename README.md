@@ -38,8 +38,8 @@ Le projet suit une architecture MVC Laravel classique avec les modules suivants 
 
 ```bash
 # 1. Cloner le repo
-git clone https://github.com/votre-utilisateur/ckd-platform.git
-cd ckd-platform
+git clone [https://github.com/ONeil144/ckd.git](https://github.com/ONeil144/ckd.git)
+cd ckd
 
 # 2. Installer les dépendances PHP
 composer install
