@@ -31,7 +31,7 @@ Le projet suit une architecture MVC Laravel classique avec les modules suivants 
 | Backend          | PHP (Laravel 11.x)                    |
 | Base de données  | MySQL                                 |
 | Authentification | Laravel Auth / Middleware             |
-| Frontend         | Blade + W3 CSS      |
+| Frontend         | Blade + W3 CSS                        |
 | Hébergement      | Render / Railway                      |
 
 ## ⚙️ Installation locale
@@ -54,7 +54,39 @@ php artisan key:generate
 # 5. Lancer les migrations
 php artisan migrate
 
-# 6. Lancer le serveur
+# 6. Créer un admin pour commencer à gérer le système
+# - Aller dans phpmyadmin et entrer la commande sql pour cela. Par exemple:
+INSERT INTO users ( 
+    code_personnel, 
+    name, 
+    prenom, 
+    email, 
+    email_verified_at, 
+    password, 
+    avatar, 
+    role, 
+    created_at, 
+    updated_at 
+) VALUES ( 
+    'ADMIN001', 
+    'Admin', 
+    'Principal', 
+    'admin@example.com', 
+    NOW(), 
+    '$2y$10$rEMnGA0ruGqfpxgcZ3TDLezS1KZ7OrXnUtvMDrUQtz2I67J5FcZQ2', (version hachée du mot de passe "admin123") 
+    NULL, 
+    'administrateur', 
+    NOW(), 
+    NOW() 
+);
+
+# 7. Installer les dépendances vite et npm
+npm -v
+node -v
+npm install
+npm run build
+
+# 8. Lancer le serveur
 php artisan serve
 ```
 
